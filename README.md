@@ -1,9 +1,8 @@
 # LearnAlgorithm
-刷刷算法题
-
+高频题型
 
 ## 翻转链表
-保存->翻转->前后移
+思路：保存->翻转->前后移
 ```python
 def reverse_linked_list(head):
     """
@@ -100,4 +99,97 @@ def binary_search(arr, target):
             high = mid - 1  # 目标值在左侧，更新结束索引
 
     return -1  # 如果未找到目标值，返回 -1
+```
+
+## 删除有序数组中的重复项
+思路：快慢指针
+```python
+def remove_duplicates(array):
+    # 检查数组是否为空，如果为空，返回 0
+    if not array:
+        return 0
+    
+    # 初始化两个指针
+    slow = 1  # 指向新数组的下一个可写位置
+    fast = 1  # 用于遍历原数组
+
+    # 遍历原数组，直到 fast 指针到达数组末尾
+    while fast < len(array):
+        # 比较当前元素和前一个元素
+        if array[fast] != array[fast - 1]:
+            # 如果不同，说明找到了一个新的元素
+            array[slow] = array[fast]  # 将新元素写入到 slow 指向的位置
+            slow += 1  # 移动 slow 指针，准备写入下一个新元素
+        # 不管是否写入，fast 都要向前移动
+        fast += 1
+    
+    # 返回新数组的长度，即有效元素的数量
+    return slow
+```
+
+## 无重复字符的最长子串
+思路：滑动窗口
+```python
+def lengthOfLongestSubstring(strs):
+    # 如果输入字符串为空，直接返回 0
+    if not strs:
+        return 0
+    
+    # 初始化最长子串的长度为 0
+    ans = 0
+    # 左指针，表示当前子串的起始位置
+    left = 0
+    # 用于存储当前窗口中的字符，确保它们是唯一的
+    window = set()
+
+    # 遍历字符串中的每个字符，右指针表示当前字符的索引
+    for right, c in enumerate(strs):
+        # 如果当前字符已经在窗口中，说明出现了重复字符
+        while c in window:
+            # 移除左指针指向的字符，缩小窗口
+            window.remove(strs[left])
+            # 移动左指针向右，继续缩小窗口
+            left += 1
+        
+        # 将当前字符添加到窗口中
+        window.add(c)
+        # 计算当前无重复字符的子串长度，并更新最长长度
+        ans = max(ans, right - left + 1)
+
+    # 返回找到的无重复字符的最长子串的长度
+    return ans
+```
+
+## 合并两个有序链表
+时间复杂度为 O(m + n)
+```python
+def merge_two_lists(l1, l2):
+    # 创建一个虚拟头节点，方便处理合并操作
+    dummy = ListNode(0)
+    current = dummy  # 用于遍历和构建合并链表的指针
+
+    # 遍历两个链表，直到其中一个链表为空
+    while l1 and l2:
+        # 比较两个链表的当前节点的值
+        if l1.val < l2.val:
+            # 如果 l1 的值更小，将 l1 的节点添加到合并链表中
+            current.next = l1
+            l1 = l1.next  # 移动 l1 指针到下一个节点
+        else:
+            # 如果 l2 的值更小或相等，将 l2 的节点添加到合并链表中
+            current.next = l2
+            l2 = l2.next  # 移动 l2 指针到下一个节点
+        
+        # 移动 current 指针到合并链表的下一个位置
+        current = current.next
+
+    # 处理剩余的节点
+    # 只需将 l1 或 l2 中剩余的节点连到合并链表的末尾
+    if l1:
+        current.next = l1
+    if l2:
+        current.next = l2
+
+    # 返回合并后的链表，去掉虚拟头节点
+    return dummy.next
 ```
