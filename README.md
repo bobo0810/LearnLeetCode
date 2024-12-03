@@ -8,7 +8,7 @@
 
 # 高频题库
 - [LeetCode热门100题](https://leetcode.cn/studyplan/top-100-liked/)
-- 代码随想录   暂未看
+- 代码随想录   
 - [面试经典150题](https://leetcode.cn/studyplan/top-interview-150/)
 
 
