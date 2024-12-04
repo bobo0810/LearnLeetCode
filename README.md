@@ -1,6 +1,5 @@
 # LearnLeetCode
 
-
 [高频题型](高频题型.md)
 
 [解题模板](解题模板.md)
@@ -17,4 +16,4 @@
 - [Hello 算法](https://www.hello-algo.com/chapter_hello_algo/)
 - [代码随想录: 完整刷题计划，少走弯路，循序渐进学算法](https://www.programmercarl.com/)
 - [LeetCode-Book  《剑指Offer》《图解算法数据结构》题解](https://github.com/krahets/LeetCode-Book)
-- [LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解](https://doocs.github.io/leetcode/)   暂未看
+- [LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解](https://doocs.github.io/leetcode/)   
