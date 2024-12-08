@@ -19,5 +19,5 @@
 - [LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解](https://doocs.github.io/leetcode/)   
 
 # VSCode刷题插件
-- Leetcode 官方插件，刷题进度会同步到官方
-- LeetCode with labuladong 第三方插件，含题解，进度不同步
+- Leetcode 官方插件
+- LeetCode with labuladong 第三方插件，含题解
