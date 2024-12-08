@@ -1,8 +1,7 @@
 # LearnLeetCode
 
-[高频题型](高频题型.md)
 
-[解题模板](解题模板.md)
+[解题方法论](解题方法论.md)
 
 [Python语法](Python语法.md)
 
