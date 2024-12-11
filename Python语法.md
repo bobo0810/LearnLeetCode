@@ -83,7 +83,7 @@ print(add(3, 5))  # 输出 8
 
 ## 集合
 
-- Set  
+- Set   去重和快速查询元素是否存在
 
   ```python
   my_set = set() # 创建集合
