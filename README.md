@@ -17,8 +17,8 @@
   - [Hello 算法:  动画图解](https://www.hello-algo.com/chapter_hello_algo/)
 
 - 进阶
-  - [labuladong的算法笔记：付费，进阶](https://labuladong.online/algo/home/)
-  - [LeetCode、《剑指 Offer（第 2 版）》、《程序员面试金典（第 6 版）》题解](https://doocs.github.io/leetcode/)   
+  - [labuladong的算法笔记（部分付费）](https://labuladong.online/algo/home/)
+  - [LeetCode、《剑指 Offer》、《程序员面试金典》题解](https://doocs.github.io/leetcode/)   
 
 
 # VSCode刷题插件
