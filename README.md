@@ -4,6 +4,7 @@
 
 - [Python语法](Python语法.md)
 - [高频题](高频题.md)
+- [智力题](智力题.md)
 
 # 高频题库
 - [LeetCode热门100题](https://leetcode.cn/studyplan/top-100-liked/)
