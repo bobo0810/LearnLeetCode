@@ -22,10 +22,14 @@ for i,value in enumerate(nums):
 ```python
 left,right = right,left
 
-# 嵌套必须普通写法
-temp=nums[nums[i] - 1]
-nums[nums[i] - 1]=nums[i]
-nums[i]=temp
+# 下标存在嵌套，必须用临时变量替换下标，避免嵌套。否则死循环！！！
+# 交换nums[i] nums[nums[i]-1]
+# 1. 记录正确下表
+a=nums[i]
+b=nums[nums[i]-1]
+# 2. 必须用不嵌套的下标再交换
+nums[i]=b
+nums[a-1]=a
 ```
 
 ### 4. 取值范围
