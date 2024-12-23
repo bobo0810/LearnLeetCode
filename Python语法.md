@@ -112,16 +112,6 @@ print(add(3, 5))  # 输出 8
   counter.pop(key)  # 删除key
   ```
 
-## 堆
-
-```python
-# 考察堆手动实现
-import  heapq # 默认最小堆。堆顶始终是堆中最小的值
-samll_que = [] #小顶堆
-heapq.heappush(small_que, 5)# 压入元素
-min_val = heapq.heappop(small_que)  # 弹出最小元素
-```
-
 ## 栈
 
 ```python
@@ -135,7 +125,7 @@ top_element = stack.pop() # 出栈
 ```python
 from collections import deque
 dq = deque() # 创建一个双端队列
-dq.append()  # 队尾添加元素
+dq.append(xxx)  # 队尾添加元素
 head = dq.popleft() # 队头移出元素
 
 tail = dq.pop() # 队尾移出元素
