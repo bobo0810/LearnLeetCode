@@ -13,8 +13,8 @@
 ### 2. 遍历数据
 
 ```python
-for i,value in enumerate(nums):
-		 print() # 同时遍历下标和值
+for i,value in enumerate(nums):  # 同时遍历下标和值
+		 xxx
 ```
 
 ### 3. 交换两个元素
@@ -22,19 +22,18 @@ for i,value in enumerate(nums):
 ```python
 left,right = right,left
 
-# 下标存在嵌套，必须用临时变量替换下标，避免嵌套。否则死循环！！！
-# 交换nums[i] nums[nums[i]-1]
-# 1. 记录正确下表
-a=nums[i]
-b=nums[nums[i]-1]
-# 2. 必须用不嵌套的下标再交换
+# 下标嵌套，必须修复，否则死循环！！！
+# 例如 交换nums[i]  nums[nums[i]-1]
+# 1. 记录正确下标
+a,b=nums[i],nums[nums[i]-1]
+# 2. 不嵌套再交换
 nums[i]=b
 nums[a-1]=a
 ```
 
 ### 4. 取值范围
 
-`nums[0:n]` 取值范围是0~n-1，左闭右开，差值就是元素个数。
+`nums[0:n]` 取值范围是0~n-1，左闭右开，差值就是包含的元素个数。
 
 ### 5. 数组翻转
 
