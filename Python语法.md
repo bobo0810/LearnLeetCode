@@ -43,11 +43,11 @@ nums[a-1]=a
 nums = [1, 2, 3, 4, 5]
 nums.reverse()  
 # 方案二  双指针
-start,end=0,n-1 
-while start<end:
-   nums[start],nums[end]=nums[end],nums[start]
-   start+=1
-   end-=1
+left,right=0,n-1 
+while left<right:
+   nums[left],nums[right]=nums[right],nums[left]
+   left+=1
+   right-=1
 # ===================返回新对象================= 
 nums[::-1] 
 # 切片语法为 start:end:step，其中：
@@ -102,7 +102,7 @@ print(add(3, 5))  # 输出 8
   my_set.remove(3) # 删除指定元素
   ```
 
-- Counter  统计元素频率
+- Counter  统计元素频率，底层是字典Dict
 
   ```python
   # 本质是dict，默认为0
