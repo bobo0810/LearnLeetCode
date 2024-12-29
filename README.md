@@ -1,7 +1,7 @@
 # LearnLeetCode
 
 - [Hot100解题思路](hot100解题思路.md)  ⭐️代表高频题
-- [方法论](解题方法论.md)
+- [解题方法论](解题方法论.md)
 - [Python语法](Python语法.md)
 
 # 高频题库
