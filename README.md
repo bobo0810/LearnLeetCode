@@ -4,7 +4,19 @@
 - [解题方法论](解题方法论.md)
 - [Python语法](Python语法.md)
 
+
+
+# 刷题阶段
+
+- 注重==方法论==，不要陷进去
+- 专项突破刷题，解题方法论持续优化总结
+
+- 一阶段： 跳过hard,打开思路
+- 二阶段： Hot100大部分能解（理解+思路）
+- 三阶段：Hot100滚瓜烂熟
+
 # 高频题库
+
 - [LeetCode热门100题](https://leetcode.cn/studyplan/top-100-liked/)⭐️
 - [面试经典150题](https://leetcode.cn/studyplan/top-interview-150/)
 - 代码随想录   
