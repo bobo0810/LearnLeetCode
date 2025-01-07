@@ -98,8 +98,6 @@ print(add(3, 5))  # 输出 8
 index = nums.index(value)
 ```
 
-
-
 ## 集合
 
 - set   去重和快速查询元素是否存在
