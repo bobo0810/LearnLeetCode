@@ -92,6 +92,14 @@ print(add(3, 5))  # 输出 8
   print(sorted_numbers)  # 输出 [1, 1, 2, 3, 4, 5, 6, 9]
   ```
 
+### 8. 获取指定元素下标
+
+```python
+index = nums.index(value)
+```
+
+
+
 ## 集合
 
 - set   去重和快速查询元素是否存在
