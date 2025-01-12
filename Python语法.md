@@ -10,14 +10,7 @@
 | %    | 取余     | 5%2=1    |
 | x**y | x的y次方 | 4**0.5=2 |
 
-### 2. 遍历数据
-
-```python
-for i,value in enumerate(nums):  # 同时遍历下标和值
-		 xxx
-```
-
-### 3. 交换两个元素
+### 2. 交换两个元素
 
 ```python
 left,right = right,left
@@ -31,9 +24,9 @@ nums[i]=b
 nums[a-1]=a
 ```
 
-### 4. 取值范围
+### 4. 取值范围  ==左闭右开==
 
-`nums[0:n]` 取值范围是0~n-1，左闭右开，差值就是包含的元素个数。
+`nums[0:n]` 取值范围是0~n-1，差值就是包含的元素个数。
 
 ### 5. 数组翻转
 
@@ -43,7 +36,7 @@ nums[a-1]=a
 nums = [1, 2, 3, 4, 5]
 nums.reverse()  
 # 方案二  双指针
-left,right=0,n-1 
+left,right=0,n-1 # 双闭区间
 while left<right:
    nums[left],nums[right]=nums[right],nums[left]
    left+=1
@@ -95,12 +88,12 @@ print(add(3, 5))  # 输出 8
 ### 8. 获取指定元素下标
 
 ```python
-index = nums.index(value)
+index = nums.index(value) #元素重复时，只返回第一个下标
 ```
 
 ## 集合
 
-- set   去重和快速查询元素是否存在
+- set   用于==去重==和==判断元素是否存在==
 
   ```python
   my_set = set() # 创建集合
@@ -108,17 +101,16 @@ index = nums.index(value)
   my_set.remove(3) # 删除指定元素
   ```
 
-- Counter  统计元素频率，底层是字典Dict
+- Counter  ==统计元素频率==，底层是字典Dict
 
   ```python
-  # 本质是dict，默认为0
   from collections import Counter
   counter = Counter([1,2,2,2]) # 创建  {2:3,1:1}
   counter['a']=xxx  # 更新Value
   counter.pop(key)  # 删除key
   ```
 
-## 栈
+## 栈 先进后出
 
 ```python
 stack = [] # list模拟栈，创建一个空栈
@@ -126,7 +118,7 @@ stack.append(1) # 入栈
 top_element = stack.pop() # 出栈
 ```
 
-## 队列
+## 队列 先进先出
 
 ```python
 from collections import deque
@@ -136,3 +128,4 @@ head = dq.popleft() # 队头移出元素
 
 tail = dq.pop() # 队尾移出元素
 ```
+
