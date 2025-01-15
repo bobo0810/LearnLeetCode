@@ -35,8 +35,8 @@ nums[a-1]=a
 # 方案一
 nums = [1, 2, 3, 4, 5]
 nums.reverse()  
-# 方案二  双指针
-left,right=0,n-1 # 双闭区间
+# 方案二  双指针 双闭区间
+left,right=0,n-1
 while left<right:
    nums[left],nums[right]=nums[right],nums[left]
    left+=1
@@ -123,9 +123,7 @@ top_element = stack.pop() # 出栈
 ```python
 from collections import deque
 dq = deque() # 创建一个双端队列
-dq.append(xxx)  # 队尾添加元素
+dq.append(value)  # 队尾添加元素
 head = dq.popleft() # 队头移出元素
-
-tail = dq.pop() # 队尾移出元素
 ```
 
