@@ -13,8 +13,9 @@
 - 第一步：[Python语法](Python语法.md)
 - 第二步：[代码随想录官方教程⭐️](https://www.programmercarl.com/)
 - 第三步：[解题方法论](解题方法论.md)     统一解题模板，强烈建议背诵！！！
-  二分、回溯、贪心、动规直接秒杀
-- 第四步：[Hot100解题思路](hot100解题思路.md)         [LeetCode Hot100题](https://leetcode.cn/studyplan/top-100-liked/)⭐️
+  
+  背完二分、回溯、贪心、动规等直接秒杀
+- 第四步：[Hot100解题思路](hot100解题思路.md)   
 
 （2）预期
 
@@ -24,8 +25,10 @@
 
 （3）教程
 
+- [官方Hot100题](https://leetcode.cn/studyplan/top-100-liked/)⭐️
 - [代码随想录⭐️](https://www.programmercarl.com/)
 - [labuladong的算法笔记（部分付费）](https://labuladong.online/algo/home/)
+
 
 - 未看
   - [Hello算法:动画图解](https://www.hello-algo.com/chapter_hello_algo/)
