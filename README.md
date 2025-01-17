@@ -25,7 +25,7 @@
 
 （3）教程
 
-- [官方Hot100题](https://leetcode.cn/studyplan/top-100-liked/)⭐️
+- [Hot100官方题库](https://leetcode.cn/studyplan/top-100-liked/)⭐️
 - [代码随想录⭐️](https://www.programmercarl.com/)
 - [labuladong的算法笔记（部分付费）](https://labuladong.online/algo/home/)
 
